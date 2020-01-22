@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>efdd46c7-c08b-4b8a-9e89-e3ce9197f462</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>ZombiesMod</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ItemGroup>
+    <Reference Include="ScriptHookVDotNet" />
+    <Reference Include="NativeUI" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Global.vb" />
+    <Compile Include="ZombiesMod\Constants.vb" />
+    <Compile Include="ZombiesMod\FoodType.vb" />
+    <Compile Include="ZombiesMod\IProp.vb" />
+    <Compile Include="ZombiesMod\IAnimatable.vb" />
+    <Compile Include="ZombiesMod\IWeapon.vb" />
+    <Compile Include="ZombiesMod\ICraftable.vb" />
+    <Compile Include="ZombiesMod\IMapObject.vb" />
+    <Compile Include="ZombiesMod\IIdentifier.vb" />
+    <Compile Include="ZombiesMod\IInteractable.vb" />
+    <Compile Include="ZombiesMod\IFood.vb" />
+    <Compile Include="ZombiesMod\IDeletable.vb" />
+    <Compile Include="ZombiesMod\IUpdatable.vb" />
+    <Compile Include="ZombiesMod\ISpawner.vb" />
+    <Compile Include="ZombiesMod\IValidatable.vb" />
+    <Compile Include="ZombiesMod\ItemEvent.vb" />
+    <Compile Include="ZombiesMod\NearbyResource.vb" />
+    <Compile Include="ZombiesMod\MenuType.vb" />
+    <Compile Include="ZombiesMod\ItemType.vb" />
+    <Compile Include="ZombiesMod\InventoryItemBase.vb" />
+    <Compile Include="ZombiesMod\CraftableItemComponent.vb" />
+    <Compile Include="ZombiesMod\UsableItemEvent.vb" />
+    <Compile Include="ZombiesMod\CraftableInventoryItem.vb" />
+    <Compile Include="ZombiesMod\WeaponInventoryItem.vb" />
+    <Compile Include="ZombiesMod\UsableInventoryItem.vb" />
+    <Compile Include="ZombiesMod\BuildableInventoryItem.vb" />
+    <Compile Include="ZombiesMod\FoodInventoryItem.vb" />
+    <Compile Include="ZombiesMod\WeaponStorageInventoryItem.vb" />
+    <Compile Include="ZombiesMod\Weapon.vb" />
+    <Compile Include="ZombiesMod\Stat.vb" />
+    <Compile Include="ZombiesMod\Stats.vb" />
+    <Compile Include="ZombiesMod\Inventory.vb" />
+    <Compile Include="ZombiesMod\Map.vb" />
+    <Compile Include="ZombiesMod\MapProp.vb" />
+    <Compile Include="ZombiesMod\VehicleData.vb" />
+    <Compile Include="ZombiesMod\VehicleCollection.vb" />
+    <Compile Include="ZombiesMod\PedData.vb" />
+    <Compile Include="ZombiesMod\PedCollection.vb" />
+    <Compile Include="ZombiesMod\ModController.vb" />
+    <Compile Include="ZombiesMod\Zombies\ZombiePed.vb" />
+    <Compile Include="ZombiesMod\Zombies\ZombieTypes\Runner.vb" />
+    <Compile Include="ZombiesMod\Zombies\ZombieTypes\Walker.vb" />
+    <Compile Include="ZombiesMod\Wrappers\EntityEventWrapper.vb" />
+    <Compile Include="ZombiesMod\SurvivorTypes\FriendlySurvivors.vb" />
+    <Compile Include="ZombiesMod\SurvivorTypes\HostileSurvivors.vb" />
+    <Compile Include="ZombiesMod\SurvivorTypes\MerryweatherSurvivors.vb" />
+    <Compile Include="ZombiesMod\Extensions\RandomExtensions.vb" />
+    <Compile Include="ZombiesMod\Extensions\ComponentId.vb" />
+    <Compile Include="ZombiesMod\Extensions\CombatMovement.vb" />
+    <Compile Include="ZombiesMod\Extensions\CombatRange.vb" />
+    <Compile Include="ZombiesMod\Extensions\ConfigFlags.vb" />
+    <Compile Include="ZombiesMod\Extensions\CombatAttributes.vb" />
+    <Compile Include="ZombiesMod\Extensions\CombatAbility.vb" />
+    <Compile Include="ZombiesMod\Extensions\Alertness.vb" />
+    <Compile Include="ZombiesMod\Extensions\DamagePack.vb" />
+    <Compile Include="ZombiesMod\Extensions\SpeechModifier.vb" />
+    <Compile Include="ZombiesMod\Extensions\FirendlyFireType.vb" />
+    <Compile Include="ZombiesMod\Extensions\Subtask.vb" />
+    <Compile Include="ZombiesMod\Extensions\PedExtended.vb" />
+    <Compile Include="ZombiesMod\Extensions\EntityExtended.vb" />
+    <Compile Include="ZombiesMod\Extensions\VehicleExtended.vb" />
+    <Compile Include="ZombiesMod\Extensions\PlayerExtended.vb" />
+    <Compile Include="ZombiesMod\Extensions\GameExtended.vb" />
+    <Compile Include="ZombiesMod\Extensions\UiExtended.vb" />
+    <Compile Include="ZombiesMod\Extensions\ScriptExtended.vb" />
+    <Compile Include="ZombiesMod\Extensions\WorldExtended.vb" />
+    <Compile Include="ZombiesMod\Extensions\SystemExtended.vb" />
+    <Compile Include="ZombiesMod\Extensions\V3Extended.vb" />
+    <Compile Include="ZombiesMod\Extensions\DoorState.vb" />
+    <Compile Include="ZombiesMod\Extensions\PropExt.vb" />
+    <Compile Include="ZombiesMod\Static\Serializer.vb" />
+    <Compile Include="ZombiesMod\Static\Database.vb" />
+    <Compile Include="ZombiesMod\Static\Relationships.vb" />
+    <Compile Include="ZombiesMod\Static\MenuConrtoller.vb" />
+    <Compile Include="ZombiesMod\Static\Config.vb" />
+    <Compile Include="ZombiesMod\Scripts\Loot247.vb" />
+    <Compile Include="ZombiesMod\Scripts\RecruitPeds.vb" />
+    <Compile Include="ZombiesMod\Scripts\ScriptEventHandler.vb" />
+    <Compile Include="ZombiesMod\Scripts\ZombieCreator.vb" />
+    <Compile Include="ZombiesMod\Scripts\MapInteraction.vb" />
+    <Compile Include="ZombiesMod\Scripts\VehicleRepair.vb" />
+    <Compile Include="ZombiesMod\Scripts\AnimalSpawner.vb" />
+    <Compile Include="ZombiesMod\Scripts\ZombieVehicleSpawner.vb" />
+    <Compile Include="ZombiesMod\PlayerManagement\PlayerVehicles.vb" />
+    <Compile Include="ZombiesMod\PlayerManagement\PlayerMap.vb" />
+    <Compile Include="ZombiesMod\PlayerManagement\PedTask.vb" />
+    <Compile Include="ZombiesMod\PlayerManagement\PlayerGroupManager.vb" />
+    <Compile Include="ZombiesMod\PlayerManagement\LootPickupType.vb" />
+    <Compile Include="ZombiesMod\PlayerManagement\PlayerInventory.vb" />
+    <Compile Include="ZombiesMod\PlayerManagement\PlayerStats.vb" />
+    <Compile Include="ZombiesMod\PlayerManagement\StatDisplayItem.vb" />
+    <Compile Include="ZombiesMod\DataClasses\ParticleEffect.vb" />
+    <Compile Include="ZombiesMod\DataClasses\SpawnBlocker.vb" />
+    <Compile Include="ZombiesMod\DataClasses\Survivors.vb" />
+    <Compile Include="ZombiesMod\DataClasses\ItemPreview.vb" />
+    <Compile Include="ZombiesMod\Controllers\EventTypes.vb" />
+    <Compile Include="ZombiesMod\Controllers\SurvivorController.vb" />
+    <Compile Include="ZombiesMod\Controllers\WorldController.vb" />
+  </ItemGroup>
+</Project>
