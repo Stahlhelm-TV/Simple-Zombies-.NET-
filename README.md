@@ -27,6 +27,6 @@ The menu key-codes are editable in the .ini file that is created after you run t
 
 ## Credits
 
-Sollaholla - Mod Maker
-Reyser - Helping Sollaholla
-Stahlhelm-TV - Obtaining Source Code
+Sollaholla - Mod Maker  
+Reyser - Helping Sollaholla  
+Stahlhelm-TV - Obtaining Source Code  
