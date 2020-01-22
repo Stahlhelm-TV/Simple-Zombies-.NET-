@@ -24,3 +24,9 @@ Manage weapons you share with your group. After all, weapons are the key to havi
 Craft walls and barricades to keep zombies from entering your safe zone.  
 
 The menu key-codes are editable in the .ini file that is created after you run the game with the mod.
+
+## Credits
+
+Sollaholla - Mod Maker
+Reyser - Helping Sollaholla
+Stahlhelm-TV - Obtaining Source Code
