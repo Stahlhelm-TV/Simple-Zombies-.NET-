@@ -1,6 +1,7 @@
-SIMPLE ZOMBIE MOD v1.0.2d
+# SIMPLE ZOMBIE MOD v1.0.2d
 
-INSTALLATION:
+*INSTALLATION:
+
 Install both the Microsoft .NET Framework 4.5.2 (or higher, so skip this on Windows 10) and the Microsoft Visual C++ Redistributable Package for Visual Studio 2013 (x64).
 Download/Install ScriptHookV
 Download/Install ScriptHookVDotNet
@@ -9,13 +10,15 @@ Add the .dll and .pdb files from the zip to the scripts folder. (Your C:/GTA5Dir
 
 NATIIVE UI GOES IN YOUR SCRIPTS FOLDER
 
-USAGE:
+*USAGE:
+
 Once in game you can hit 'I' to bring up the inventory, and craft items with C, and show how to make the items with F.
 You can hit F10 to bring up the zombies menu.
 You can go up to a bodyguard and press E to configure him/her.
 When in front of a vehicle with low engine health, 'E' to repair it.
 
-NOTES:
+*NOTES:
+
 Zombie are attracted to noise so be weary of that or you may attract the horde. Manage your survivors so they won't shoot when you don't want them to. (Remember that you can apply tasks to all survivors at once).
 This IS a survival mod, so food and sleep need to be managed, make sure you hunt for food and loot for resources regularly so you can stay alive in this cold new world.
 If you run into a "friendly" group, try not to shoot at them. During a zombie apocalypse there is no such thing as being civil.
