@@ -1,11 +1,11 @@
 # SIMPLE ZOMBIE MOD v1.0.2d
 
 INSTALLATION:
-Install both the Microsoft .NET Framework 4.5.2 (or higher, so skip this on Windows 10) and the Microsoft Visual C++ Redistributable Package for Visual Studio 2013 (x64).
-Download/Install ScriptHookV
-Download/Install ScriptHookVDotNet
-Download/Install NativeUI
-Add the .dll and .pdb files from the zip to the scripts folder. (Your C:/GTA5Directory/scripts/)
+Install both the Microsoft .NET Framework 4.5.2 (or higher, so skip this on Windows 10) and the Microsoft Visual C++ Redistributable Package for Visual Studio 2013 (x64). 
+Download/Install ScriptHookV 
+Download/Install ScriptHookVDotNet 
+Download/Install NativeUI 
+Add the .dll and .pdb files from the zip to the scripts folder. (Your C:/GTA5Directory/scripts/) 
 
 NATIIVE UI GOES IN YOUR SCRIPTS FOLDER
 
